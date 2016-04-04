@@ -1,0 +1,16 @@
+---
+
+# Default path to the PAM configuration files
+pam_path: /etc/pam.d
+
+# User which owns the final PAM configuration file
+pam_user: root
+
+# User which owns the final PAM configuration file
+pam_group: root
+
+# Permissions of the final PAM configuration file
+pam_chmod: 0644
+
+# PAM configuration
+pam_config: {}

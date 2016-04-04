@@ -1,0 +1,16 @@
+---
+
+- name: Create the PAM configure file
+  template:
+    src: pam.conf.j2
+    dest: "{{ pam_path + '/' + item.key }}"
+  with_dict: "{{ pam_config }}"
+  tags:
+    - pam_config
+
+- name: Set the owner and permissions of the PAM configuration file
+  file:
+    path: "{{ pam_path + '/' + item.key }}"
+  with_dict: "{{ pam_config }}"
+  tags:
+    - pam_config
