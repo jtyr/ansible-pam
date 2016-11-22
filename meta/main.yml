@@ -13,4 +13,4 @@ galaxy_info:
   categories:
     - system
 dependencies:
- - config_encoder_filters
+ - jtyr.config_encoder_filters
